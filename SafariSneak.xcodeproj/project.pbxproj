@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD861FC72B64C8B3003B807A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD861FC62B64C8B3003B807A /* AppDelegate.swift */; };
+		CD861FC92B64C8B3003B807A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD861FC82B64C8B3003B807A /* SceneDelegate.swift */; };
+		CD861FCC2B64C8B3003B807A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD861FCA2B64C8B3003B807A /* LaunchScreen.storyboard */; };
+		CD861FCF2B64C8B3003B807A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD861FCD2B64C8B3003B807A /* Main.storyboard */; };
+		CD861FD82B64C8B3003B807A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD861FD72B64C8B3003B807A /* AppDelegate.swift */; };
+		CD861FDB2B64C8B3003B807A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD861FD92B64C8B3003B807A /* Main.storyboard */; };
+		CD861FE22B64C8B3003B807A /* SafariSneak Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CD861FE12B64C8B3003B807A /* SafariSneak Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD861FEC2B64C8B3003B807A /* SafariSneak Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CD861FEB2B64C8B3003B807A /* SafariSneak Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD861FF22B64C8B3003B807A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = CD861FAD2B64C8B2003B807A /* Main.html */; };
+		CD861FF32B64C8B3003B807A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = CD861FAD2B64C8B2003B807A /* Main.html */; };
+		CD861FF42B64C8B3003B807A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD861FAF2B64C8B2003B807A /* Icon.png */; };
+		CD861FF52B64C8B3003B807A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD861FAF2B64C8B2003B807A /* Icon.png */; };
+		CD861FF62B64C8B3003B807A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB02B64C8B2003B807A /* Style.css */; };
+		CD861FF72B64C8B3003B807A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB02B64C8B2003B807A /* Style.css */; };
+		CD861FF82B64C8B3003B807A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB12B64C8B2003B807A /* Script.js */; };
+		CD861FF92B64C8B3003B807A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB12B64C8B2003B807A /* Script.js */; };
+		CD861FFA2B64C8B3003B807A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD861FB22B64C8B2003B807A /* ViewController.swift */; };
+		CD861FFB2B64C8B3003B807A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD861FB22B64C8B2003B807A /* ViewController.swift */; };
+		CD861FFC2B64C8B3003B807A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB32B64C8B3003B807A /* Assets.xcassets */; };
+		CD861FFD2B64C8B3003B807A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB32B64C8B3003B807A /* Assets.xcassets */; };
+		CD861FFE2B64C8B3003B807A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD861FB52B64C8B3003B807A /* SafariWebExtensionHandler.swift */; };
+		CD861FFF2B64C8B3003B807A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD861FB52B64C8B3003B807A /* SafariWebExtensionHandler.swift */; };
+		CD8620002B64C8B3003B807A /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB72B64C8B3003B807A /* _locales */; };
+		CD8620012B64C8B3003B807A /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB72B64C8B3003B807A /* _locales */; };
+		CD8620022B64C8B3003B807A /* images in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB82B64C8B3003B807A /* images */; };
+		CD8620032B64C8B3003B807A /* images in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB82B64C8B3003B807A /* images */; };
+		CD8620042B64C8B3003B807A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB92B64C8B3003B807A /* manifest.json */; };
+		CD8620052B64C8B3003B807A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CD861FB92B64C8B3003B807A /* manifest.json */; };
+		CD8620062B64C8B3003B807A /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBA2B64C8B3003B807A /* background.js */; };
+		CD8620072B64C8B3003B807A /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBA2B64C8B3003B807A /* background.js */; };
+		CD8620082B64C8B3003B807A /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBB2B64C8B3003B807A /* content.js */; };
+		CD8620092B64C8B3003B807A /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBB2B64C8B3003B807A /* content.js */; };
+		CD86200A2B64C8B3003B807A /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBC2B64C8B3003B807A /* popup.html */; };
+		CD86200B2B64C8B3003B807A /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBC2B64C8B3003B807A /* popup.html */; };
+		CD86200C2B64C8B3003B807A /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBD2B64C8B3003B807A /* popup.css */; };
+		CD86200D2B64C8B3003B807A /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBD2B64C8B3003B807A /* popup.css */; };
+		CD86200E2B64C8B3003B807A /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBE2B64C8B3003B807A /* popup.js */; };
+		CD86200F2B64C8B3003B807A /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = CD861FBE2B64C8B3003B807A /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD861FE32B64C8B3003B807A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD861FA72B64C8B2003B807A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD861FE02B64C8B3003B807A;
+			remoteInfo = "SafariSneak Extension (iOS)";
+		};
+		CD861FED2B64C8B3003B807A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD861FA72B64C8B2003B807A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD861FEA2B64C8B3003B807A;
+			remoteInfo = "SafariSneak Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD8620152B64C8B3003B807A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD861FE22B64C8B3003B807A /* SafariSneak Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD86201C2B64C8B3003B807A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD861FEC2B64C8B3003B807A /* SafariSneak Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD861FAE2B64C8B2003B807A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		CD861FAF2B64C8B2003B807A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CD861FB02B64C8B2003B807A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		CD861FB12B64C8B2003B807A /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		CD861FB22B64C8B2003B807A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD861FB32B64C8B3003B807A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD861FB52B64C8B3003B807A /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		CD861FB72B64C8B3003B807A /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		CD861FB82B64C8B3003B807A /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		CD861FB92B64C8B3003B807A /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		CD861FBA2B64C8B3003B807A /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		CD861FBB2B64C8B3003B807A /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		CD861FBC2B64C8B3003B807A /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		CD861FBD2B64C8B3003B807A /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		CD861FBE2B64C8B3003B807A /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		CD861FC32B64C8B3003B807A /* SafariSneak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSneak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD861FC62B64C8B3003B807A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD861FC82B64C8B3003B807A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD861FCB2B64C8B3003B807A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD861FCE2B64C8B3003B807A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD861FD02B64C8B3003B807A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD861FD52B64C8B3003B807A /* SafariSneak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSneak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD861FD72B64C8B3003B807A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD861FDA2B64C8B3003B807A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD861FDC2B64C8B3003B807A /* SafariSneak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariSneak.entitlements; sourceTree = "<group>"; };
+		CD861FE12B64C8B3003B807A /* SafariSneak Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SafariSneak Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD861FE62B64C8B3003B807A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD861FEB2B64C8B3003B807A /* SafariSneak Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SafariSneak Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD861FF02B64C8B3003B807A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD861FF12B64C8B3003B807A /* SafariSneak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariSneak.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD861FC02B64C8B3003B807A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FD22B64C8B3003B807A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FDE2B64C8B3003B807A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FE82B64C8B3003B807A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD861FA62B64C8B2003B807A = {
+			isa = PBXGroup;
+			children = (
+				CD861FAB2B64C8B2003B807A /* Shared (App) */,
+				CD861FB42B64C8B3003B807A /* Shared (Extension) */,
+				CD861FC52B64C8B3003B807A /* iOS (App) */,
+				CD861FD62B64C8B3003B807A /* macOS (App) */,
+				CD861FE52B64C8B3003B807A /* iOS (Extension) */,
+				CD861FEF2B64C8B3003B807A /* macOS (Extension) */,
+				CD861FC42B64C8B3003B807A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD861FAB2B64C8B2003B807A /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FB22B64C8B2003B807A /* ViewController.swift */,
+				CD861FB32B64C8B3003B807A /* Assets.xcassets */,
+				CD861FAC2B64C8B2003B807A /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		CD861FAC2B64C8B2003B807A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FAD2B64C8B2003B807A /* Main.html */,
+				CD861FAF2B64C8B2003B807A /* Icon.png */,
+				CD861FB02B64C8B2003B807A /* Style.css */,
+				CD861FB12B64C8B2003B807A /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD861FB42B64C8B3003B807A /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FB52B64C8B3003B807A /* SafariWebExtensionHandler.swift */,
+				CD861FB62B64C8B3003B807A /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		CD861FB62B64C8B3003B807A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FB72B64C8B3003B807A /* _locales */,
+				CD861FB82B64C8B3003B807A /* images */,
+				CD861FB92B64C8B3003B807A /* manifest.json */,
+				CD861FBA2B64C8B3003B807A /* background.js */,
+				CD861FBB2B64C8B3003B807A /* content.js */,
+				CD861FBC2B64C8B3003B807A /* popup.html */,
+				CD861FBD2B64C8B3003B807A /* popup.css */,
+				CD861FBE2B64C8B3003B807A /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD861FC42B64C8B3003B807A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FC32B64C8B3003B807A /* SafariSneak.app */,
+				CD861FD52B64C8B3003B807A /* SafariSneak.app */,
+				CD861FE12B64C8B3003B807A /* SafariSneak Extension.appex */,
+				CD861FEB2B64C8B3003B807A /* SafariSneak Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD861FC52B64C8B3003B807A /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FC62B64C8B3003B807A /* AppDelegate.swift */,
+				CD861FC82B64C8B3003B807A /* SceneDelegate.swift */,
+				CD861FCA2B64C8B3003B807A /* LaunchScreen.storyboard */,
+				CD861FCD2B64C8B3003B807A /* Main.storyboard */,
+				CD861FD02B64C8B3003B807A /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		CD861FD62B64C8B3003B807A /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FD72B64C8B3003B807A /* AppDelegate.swift */,
+				CD861FD92B64C8B3003B807A /* Main.storyboard */,
+				CD861FDC2B64C8B3003B807A /* SafariSneak.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		CD861FE52B64C8B3003B807A /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FE62B64C8B3003B807A /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		CD861FEF2B64C8B3003B807A /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				CD861FF02B64C8B3003B807A /* Info.plist */,
+				CD861FF12B64C8B3003B807A /* SafariSneak.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD861FC22B64C8B3003B807A /* SafariSneak (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8620162B64C8B3003B807A /* Build configuration list for PBXNativeTarget "SafariSneak (iOS)" */;
+			buildPhases = (
+				CD861FBF2B64C8B3003B807A /* Sources */,
+				CD861FC02B64C8B3003B807A /* Frameworks */,
+				CD861FC12B64C8B3003B807A /* Resources */,
+				CD8620152B64C8B3003B807A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD861FE42B64C8B3003B807A /* PBXTargetDependency */,
+			);
+			name = "SafariSneak (iOS)";
+			productName = "SafariSneak (iOS)";
+			productReference = CD861FC32B64C8B3003B807A /* SafariSneak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD861FD42B64C8B3003B807A /* SafariSneak (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD86201D2B64C8B3003B807A /* Build configuration list for PBXNativeTarget "SafariSneak (macOS)" */;
+			buildPhases = (
+				CD861FD12B64C8B3003B807A /* Sources */,
+				CD861FD22B64C8B3003B807A /* Frameworks */,
+				CD861FD32B64C8B3003B807A /* Resources */,
+				CD86201C2B64C8B3003B807A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD861FEE2B64C8B3003B807A /* PBXTargetDependency */,
+			);
+			name = "SafariSneak (macOS)";
+			productName = "SafariSneak (macOS)";
+			productReference = CD861FD52B64C8B3003B807A /* SafariSneak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD861FE02B64C8B3003B807A /* SafariSneak Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8620122B64C8B3003B807A /* Build configuration list for PBXNativeTarget "SafariSneak Extension (iOS)" */;
+			buildPhases = (
+				CD861FDD2B64C8B3003B807A /* Sources */,
+				CD861FDE2B64C8B3003B807A /* Frameworks */,
+				CD861FDF2B64C8B3003B807A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SafariSneak Extension (iOS)";
+			productName = "SafariSneak Extension (iOS)";
+			productReference = CD861FE12B64C8B3003B807A /* SafariSneak Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CD861FEA2B64C8B3003B807A /* SafariSneak Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8620192B64C8B3003B807A /* Build configuration list for PBXNativeTarget "SafariSneak Extension (macOS)" */;
+			buildPhases = (
+				CD861FE72B64C8B3003B807A /* Sources */,
+				CD861FE82B64C8B3003B807A /* Frameworks */,
+				CD861FE92B64C8B3003B807A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SafariSneak Extension (macOS)";
+			productName = "SafariSneak Extension (macOS)";
+			productReference = CD861FEB2B64C8B3003B807A /* SafariSneak Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD861FA72B64C8B2003B807A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					CD861FC22B64C8B3003B807A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					CD861FD42B64C8B3003B807A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					CD861FE02B64C8B3003B807A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					CD861FEA2B64C8B3003B807A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = CD861FAA2B64C8B2003B807A /* Build configuration list for PBXProject "SafariSneak" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD861FA62B64C8B2003B807A;
+			productRefGroup = CD861FC42B64C8B3003B807A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD861FC22B64C8B3003B807A /* SafariSneak (iOS) */,
+				CD861FD42B64C8B3003B807A /* SafariSneak (macOS) */,
+				CD861FE02B64C8B3003B807A /* SafariSneak Extension (iOS) */,
+				CD861FEA2B64C8B3003B807A /* SafariSneak Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD861FC12B64C8B3003B807A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD861FF42B64C8B3003B807A /* Icon.png in Resources */,
+				CD861FCC2B64C8B3003B807A /* LaunchScreen.storyboard in Resources */,
+				CD861FF22B64C8B3003B807A /* Main.html in Resources */,
+				CD861FF82B64C8B3003B807A /* Script.js in Resources */,
+				CD861FFC2B64C8B3003B807A /* Assets.xcassets in Resources */,
+				CD861FCF2B64C8B3003B807A /* Main.storyboard in Resources */,
+				CD861FF62B64C8B3003B807A /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FD32B64C8B3003B807A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD861FF52B64C8B3003B807A /* Icon.png in Resources */,
+				CD861FF72B64C8B3003B807A /* Style.css in Resources */,
+				CD861FDB2B64C8B3003B807A /* Main.storyboard in Resources */,
+				CD861FF92B64C8B3003B807A /* Script.js in Resources */,
+				CD861FFD2B64C8B3003B807A /* Assets.xcassets in Resources */,
+				CD861FF32B64C8B3003B807A /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FDF2B64C8B3003B807A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8620062B64C8B3003B807A /* background.js in Resources */,
+				CD86200C2B64C8B3003B807A /* popup.css in Resources */,
+				CD86200A2B64C8B3003B807A /* popup.html in Resources */,
+				CD8620022B64C8B3003B807A /* images in Resources */,
+				CD8620042B64C8B3003B807A /* manifest.json in Resources */,
+				CD8620002B64C8B3003B807A /* _locales in Resources */,
+				CD8620082B64C8B3003B807A /* content.js in Resources */,
+				CD86200E2B64C8B3003B807A /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FE92B64C8B3003B807A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8620072B64C8B3003B807A /* background.js in Resources */,
+				CD86200D2B64C8B3003B807A /* popup.css in Resources */,
+				CD86200B2B64C8B3003B807A /* popup.html in Resources */,
+				CD8620032B64C8B3003B807A /* images in Resources */,
+				CD8620052B64C8B3003B807A /* manifest.json in Resources */,
+				CD8620012B64C8B3003B807A /* _locales in Resources */,
+				CD8620092B64C8B3003B807A /* content.js in Resources */,
+				CD86200F2B64C8B3003B807A /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD861FBF2B64C8B3003B807A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD861FFA2B64C8B3003B807A /* ViewController.swift in Sources */,
+				CD861FC72B64C8B3003B807A /* AppDelegate.swift in Sources */,
+				CD861FC92B64C8B3003B807A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FD12B64C8B3003B807A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD861FFB2B64C8B3003B807A /* ViewController.swift in Sources */,
+				CD861FD82B64C8B3003B807A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FDD2B64C8B3003B807A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD861FFE2B64C8B3003B807A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD861FE72B64C8B3003B807A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD861FFF2B64C8B3003B807A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD861FE42B64C8B3003B807A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD861FE02B64C8B3003B807A /* SafariSneak Extension (iOS) */;
+			targetProxy = CD861FE32B64C8B3003B807A /* PBXContainerItemProxy */;
+		};
+		CD861FEE2B64C8B3003B807A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD861FEA2B64C8B3003B807A /* SafariSneak Extension (macOS) */;
+			targetProxy = CD861FED2B64C8B3003B807A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD861FAD2B64C8B2003B807A /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD861FAE2B64C8B2003B807A /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		CD861FCA2B64C8B3003B807A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD861FCB2B64C8B3003B807A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD861FCD2B64C8B3003B807A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD861FCE2B64C8B3003B807A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD861FD92B64C8B3003B807A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD861FDA2B64C8B3003B807A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD8620102B64C8B3003B807A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD8620112B64C8B3003B807A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CD8620132B64C8B3003B807A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SafariSneak Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.SafariSneak.Extension;
+				PRODUCT_NAME = "SafariSneak Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8620142B64C8B3003B807A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SafariSneak Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.SafariSneak.Extension;
+				PRODUCT_NAME = "SafariSneak Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD8620172B64C8B3003B807A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SafariSneak;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.SafariSneak;
+				PRODUCT_NAME = SafariSneak;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8620182B64C8B3003B807A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SafariSneak;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.SafariSneak;
+				PRODUCT_NAME = SafariSneak;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD86201A2B64C8B3003B807A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/SafariSneak.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SafariSneak Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.SafariSneak.Extension;
+				PRODUCT_NAME = "SafariSneak Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD86201B2B64C8B3003B807A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/SafariSneak.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SafariSneak Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.SafariSneak.Extension;
+				PRODUCT_NAME = "SafariSneak Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CD86201E2B64C8B3003B807A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/SafariSneak.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariSneak;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.SafariSneak;
+				PRODUCT_NAME = SafariSneak;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD86201F2B64C8B3003B807A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/SafariSneak.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariSneak;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.SafariSneak;
+				PRODUCT_NAME = SafariSneak;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD861FAA2B64C8B2003B807A /* Build configuration list for PBXProject "SafariSneak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8620102B64C8B3003B807A /* Debug */,
+				CD8620112B64C8B3003B807A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8620122B64C8B3003B807A /* Build configuration list for PBXNativeTarget "SafariSneak Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8620132B64C8B3003B807A /* Debug */,
+				CD8620142B64C8B3003B807A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8620162B64C8B3003B807A /* Build configuration list for PBXNativeTarget "SafariSneak (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8620172B64C8B3003B807A /* Debug */,
+				CD8620182B64C8B3003B807A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8620192B64C8B3003B807A /* Build configuration list for PBXNativeTarget "SafariSneak Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD86201A2B64C8B3003B807A /* Debug */,
+				CD86201B2B64C8B3003B807A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD86201D2B64C8B3003B807A /* Build configuration list for PBXNativeTarget "SafariSneak (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD86201E2B64C8B3003B807A /* Debug */,
+				CD86201F2B64C8B3003B807A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD861FA72B64C8B2003B807A /* Project object */;
+}
