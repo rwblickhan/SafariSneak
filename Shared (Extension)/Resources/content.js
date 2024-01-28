@@ -1,7 +1,3 @@
-/// <reference types="webextension-polyfill" />
-
-import { runtime } from "webextension-polyfill";
-
 console.log("SafariSneak initialized");
 
 let isListening = false;
@@ -9,16 +5,16 @@ let shouldOpenInNewTab = false;
 
 function getAllLinks() {
   const links = document.querySelectorAll("a");
-  let linksUrls: string[] = [];
+  let linksUrls = [];
   links.forEach((link) => {
     linksUrls.push(link.href);
   });
   return linksUrls;
 }
 
-async function handleSelection(url: string) {
+async function handleSelection(url) {
   if (shouldOpenInNewTab) {
-    await runtime.sendMessage({ id: "open_link", url });
+    await browser.runtime.sendMessage({ id: "open_link", url });
   } else {
     window.location.href = url;
   }

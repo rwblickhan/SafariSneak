@@ -1,5 +1,0 @@
-{
-	"devDependencies": {
-		"@types/webextension-polyfill": "^0.10.7"
-	}
-}
