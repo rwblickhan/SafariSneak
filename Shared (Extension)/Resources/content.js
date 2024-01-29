@@ -1,4 +1,4 @@
-console.log("SafariSneak initialized");
+console.log("SafariSneak: initialized");
 
 let isListening = false;
 let shouldOpenInNewTab = false;
@@ -6,30 +6,33 @@ let links = [];
 let prefixString = "";
 
 // TODO allow for smartcase etc
+// TODO uniquify links
 
 function getAllLinks() {
   const links = document.querySelectorAll("a");
   let linksUrls = [];
   for (const link of links) {
+    const textContent = (link.textContent ?? "").trim();
+    const title = (link.getAttribute("title") ?? "").trim();
+    const ariaLabel = (link.getAttribute("aria-label") ?? "").trim();
     const text =
-      !!link.textContent && link.textContent.length > 0
+      textContent.length > 0
         ? link.textContent
-        : !!link.getAttribute("title") && link.getAttribute("title").length > 0
-        ? link.getAttribute("title")
-        : !!link.getAttribute("aria-label") &&
-          link.getAttribute("aria-label").length > 0
-        ? link.getAttribute("aria-label")
+        : title.length > 0
+        ? title
+        : ariaLabel.length > 0
+        ? ariaLabel
         : "";
     linksUrls.push({
       url: link.href,
-      text: text.toLocaleLowerCase().replace(/\s/g, "").trim(),
+      text: text.toLocaleLowerCase().replace(/\s/g, ""),
     });
   }
   console.log(JSON.stringify(linksUrls));
   return linksUrls;
 }
 
-function findUniquePrefixLink() {
+function findPrefixLinks() {
   const prefixLinks = [];
   for (const link of links) {
     if (link.text.startsWith(prefixString)) {
@@ -37,16 +40,24 @@ function findUniquePrefixLink() {
     }
   }
   console.log(`SafariSneak: Matching URLs ${JSON.stringify(prefixLinks)}`);
-  return prefixLinks.length === 1 ? prefixLinks[0] : null;
+  return prefixLinks;
 }
 
 function appendPrefixCharacter(c) {
   prefixString += c;
   console.log(`SafariSneak: Current prefix ${prefixString}`);
   if (prefixString.length >= 2) {
-    const uniquePrefixLink = findUniquePrefixLink();
-    if (!!uniquePrefixLink) {
-      handleSelection(uniquePrefixLink.url);
+    const prefixLinks = findPrefixLinks();
+    switch (prefixLinks.length) {
+      case 0:
+        console.log("SafariSneak: No matches.");
+        reset();
+        break;
+      case 1:
+        handleSelection(prefixLinks[0].url);
+        break;
+      default:
+        break;
     }
   }
 }
@@ -61,6 +72,7 @@ async function handleSelection(url) {
 }
 
 function reset() {
+  console.log("SafariSneak: Resetting...");
   isListening = false;
   shouldOpenInNewTab = false;
   prefixString = "";
@@ -75,13 +87,16 @@ document.addEventListener("keydown", async function (event) {
 
   if (event.key === "Escape" || event.key === "CommandOrControl") {
     console.log(
-      "SafariSneak: Canceled listening due to Escape or CommandOrControl"
+      "SafariSneak: Canceled listening due to Escape or CommandOrControl."
     );
     reset();
   } else if (isListening) {
-    console.log(`SafariSneak: Appending ${event.key} to prefix`);
     appendPrefixCharacter(event.key);
-  } else if (event.key === "s" || event.key === "S") {
+  } else if (
+    (event.key === "s" || event.key === "S") &&
+    !event.ctrlKey &&
+    !event.metaKey
+  ) {
     console.log("SafariSneak: Listening...");
     isListening = true;
     shouldOpenInNewTab = event.shiftKey;
